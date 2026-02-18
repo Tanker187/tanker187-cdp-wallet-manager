@@ -24,7 +24,11 @@
     "crypto-js": "^4.2.0",
     "framer-motion": "^11.9.0",
     "lucide-react": "^0.439.0",
+<<<dependabot/npm_and_yarn/npm_and_yarn-20dc1d96db
+    "next": "^14.2.32",
+=======
     "next": "14.2.35",
+>>main
     "pg": "^8.13.0",
     "react": "^18",
     "react-dom": "^18",
