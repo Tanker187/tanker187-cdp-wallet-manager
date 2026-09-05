@@ -1,21 +1,14 @@
 # Security Policy
 
-## Supported Versions
+## Reporting a vulnerability
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Please report suspected security vulnerabilities privately through GitHub rather than opening a public issue. Include the affected component, reproduction steps, impact, and relevant logs or screenshots. Do not include real credentials or other secrets in a report.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+If GitHub private vulnerability reporting is enabled, use that channel. Otherwise, contact the repository owner privately through GitHub.
 
-## Reporting a Vulnerability
+## Secrets
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+- Never commit API keys, private keys, passwords, database credentials, or production tokens.
+- Store secrets in environment variables or the deployment platform's secret store.
+- Rotate any credential that may have been exposed in Git history.
+- Treat `NEXT_PUBLIC_*` and other client-exposed variables as public; never place sensitive secrets in them.
